@@ -14,6 +14,8 @@ public class NotificadorEmail implements Notificador {
 		System.out.println("Notificador Email REAL");
 	}
 	
+	
+	
 	@Override
 	public void notificar(Cliente cliente, String mensagem) {
 
