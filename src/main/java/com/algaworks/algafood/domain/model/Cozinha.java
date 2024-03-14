@@ -8,13 +8,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tab_cozinhas")
 public class Cozinha {
 
 	@Id
 	private Long id;
 	
-	@Column(name = "nom_cozinha", length = 30)
 	private String nome;
 
 	public Long getId() {
