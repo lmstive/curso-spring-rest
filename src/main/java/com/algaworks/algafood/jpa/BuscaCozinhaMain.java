@@ -14,9 +14,9 @@ public class BuscaCozinhaMain {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)
 				.web(WebApplicationType.NONE).run(args);
 
-		CozinhaRepository cadastroCozinha = applicationContext.getBean(CozinhaRepository.class);
+		CozinhaRepository cozinhaRepository = applicationContext.getBean(CozinhaRepository.class);
 		
-		Cozinha cozinha = cadastroCozinha.porId(1L);
+		Cozinha cozinha = cozinhaRepository.porId(1L);
 		
 		System.out.println(cozinha.getNome());
 		

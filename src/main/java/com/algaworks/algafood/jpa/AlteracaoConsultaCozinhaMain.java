@@ -14,13 +14,13 @@ public class AlteracaoConsultaCozinhaMain {
 		ApplicationContext applicationContext = new SpringApplicationBuilder(AlgafoodApiApplication.class)
 				.web(WebApplicationType.NONE).run(args);
 
-		CozinhaRepository cadastroCozinha = applicationContext.getBean(CozinhaRepository.class);
+		CozinhaRepository cozinhaRepository = applicationContext.getBean(CozinhaRepository.class);
 		
 		Cozinha cozinha = new Cozinha();
 		cozinha.setId(1L);
 		cozinha.setNome("Brasileira");
 		
-		cadastroCozinha.adicionar(cozinha);
+		cozinhaRepository.adicionar(cozinha);
 		
 
  	}
